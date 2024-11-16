@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1b2e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #a278ff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 60px; /* For header space */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.get-started {
+    background-color: #a278ff;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.get-started:hover {
+    background-color: #7c51ff;
+    transform: scale(1.05);
+}
+
+/* Trending Section */
+.trending {
+    padding: 20px 50px;
+    margin-top: -80px;
+}
+
+.trending-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.trending-header h2 {
+    font-size: 1.8em;
+    color: #a278ff;
+}
+
+.movie-thumbnails {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.thumbnail {
+    position: relative;
+    margin-right: 10px;
+    min-width: 150px;
+}
+
+.thumbnail img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.badge {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #a278ff;
+    padding: 5px 10px;
+    color: white;
+    font-size: 0.8em;
+    border-radius: 3px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1423;
+    padding: 20px;
+    text-align: center;
+    color: #a278ff;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
