@@ -28,12 +28,22 @@ header {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: #a278ff;
+    color: #ffffff;
+    margin-left: 10px;
+    background-color: #a278ff;
+    padding-right: 9px;
+    padding-left: 9px;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logo:hover {
+    box-shadow: 6px 6px 13px rgb(75, 34, 141);
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
