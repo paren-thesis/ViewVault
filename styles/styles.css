@@ -115,6 +115,7 @@ header {
     font-size: 1.5em;
     border-radius: 4px;
     transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
 }
 
 .get-started:hover {
