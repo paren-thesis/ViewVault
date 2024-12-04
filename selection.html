@@ -1,88 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/selection.css">
-        <title>MovieWeb | Selection</title>
+    <title>Movie Selection</title>
+    <link rel="stylesheet" href="../styles/selection.css">
 </head>
-
 <body>
-
     <header>
-        <div class="logo">MovieWeb</div>
+        <div class="logo">ViewVault</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV Series</a></li>
-                <li><a href="#">Genre</a></li>
+                <li>Home</li>
+                <li>Movies</li>
+                <li>TV Series</li>
+                <li>Genre</li>
             </ul>
         </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>🔍</button>
-        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="overlay">
-            <h1>Joy Ride</h1>
-            <p>Comedy, 2024</p>
-            <button class="play-button">▶</button>
+    <!-- Video Player Section -->
+    <section class="video-player">
+        <div class="player">
+            <video id="movie-player" width="100%" controls>
+                <source id="video-source" src="../clips/action/sample-movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="genres">
+            <button class="genre-btn" data-genre="action">Action</button>
+            <button class="genre-btn" data-genre="adventure">Adventure</button>
+            <button class="genre-btn" data-genre="comedy">Comedy</button>
+            <button class="genre-btn" data-genre="drama">Drama</button>
         </div>
     </section>
 
-    <!-- Genre Buttons -->
-    <section class="genres">
-        <button>Action</button>
-        <button>Animation</button>
-        <button>Comedy</button>
-        <button>Drama</button>
-        <button>Horror</button>
-        <button>Sci-fi</button>
+    <!-- Movie Thumbnails -->
+    <section class="movie-thumbnails">
+        <h2>Movies</h2>
+        <div class="thumbnail-grid" id="thumbnail-grid">
+            <!-- Thumbnails dynamically loaded here -->
+        </div>
     </section>
 
-    <!-- Movies Section -->
-    <div class="section-header">
-        <h2>Movies</h2>
-        <a href="#">See all ></a>
-    </div>
-
-    <div class="third">
-        <section class="movies">
-            <div class="movie-grid">
-                <!-- Add movie cards -->
-                <div class="movie-card">
-                    <img src="images/thumbnails/drama/soundOfFreedom.jfif" alt="The Raid">
-                    <span class="badge">Action</span>
-                    <p>Sound Of Freedom</p>
-                </div>
-                <div class="movie-card">
-                    <img src="images/thumbnails/comedy/joyRide.jfif" alt="Joy Ride">
-                    <span class="badge">Comedy</span>
-                    <p>Joy Ride</p>
-                </div>
-                <div class="movie-card">
-                    <img src="images/thumbnails/drama/soundOfFreedom.jfif" alt="The Raid">
-                    <span class="badge">Action</span>
-                    <p>Sound Of Freedom</p>
-                </div>
-                <div class="movie-card">
-                    <img src="images/thumbnails/comedy/joyRide.jfif" alt="Joy Ride">
-                    <span class="badge">Comedy</span>
-                    <p>Joy Ride</p>
-                </div>
-                <!-- Add more movie cards here -->
-            </div>
-        </section>
-    </div>
+    <script src="../scripts/selection.js"></script>
 </body>
-
 </html>
