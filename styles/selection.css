@@ -52,6 +52,10 @@ header {
   box-shadow: 6px 6px 13px rgb(75, 34, 141);
 }
 
+.empty {
+  height: 100px;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -62,6 +66,7 @@ nav li {
   cursor: pointer;
   padding: 5px 10px;
   transition: background 0.3s;
+  font-weight: 800;
 }
 
 nav li:hover {
@@ -90,18 +95,20 @@ nav li:hover {
 }
 
 .genre-btn {
-  background-color: #a278ff;
-  color: white;
-  border: none;
+  background-color: #ffffff00;
+  color: rgba(255, 255, 255, 0.959);
+  border: 2px solid #a278ff;
   padding: 10px 20px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 15px 2px;
   cursor: pointer;
   transition: background 0.3s;
+  font-weight: 800;
 }
 
 .genre-btn:hover {
   background-color: #7c51ff;
+  margin-bottom: 5px;
 }
 
 /* Movie Thumbnails */
@@ -129,4 +136,13 @@ nav li:hover {
 
 .thumbnail img:hover {
   transform: scale(1.1);
+}
+
+footer {
+  background-color: #1a1423;
+  padding: 20px;
+  text-align: center;
+  color: #a278ff;
+  font-size: 0.9em;
+  margin-top: 20px;
 }
