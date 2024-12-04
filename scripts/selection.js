@@ -1,8 +1,11 @@
 // Data for movies and genres
 const movies = {
     action: [
-        { title: "The Raid", src: "../clips/action/theraid.mp4", thumbnail: "../images/thumbnails/action/theraid.jpg" },
-        { title: "Mad Max", src: "../clips/action/madmax.mp4", thumbnail: "../images/thumbnails/action/madmax.jpg" },
+        { title: "Bade Miyan Chote", src: "../clips/action/1.mp4", thumbnail: "../images/thumbnails/action/badeMiyanChoteMiyan.jfif" },
+        { title: "Canary Black", src: "../clips/action/2.mp4", thumbnail: "../images/thumbnails/action/canaryBlack.jfif" },
+        { title: "Avengers Endgame", src: "../clips/action/2.mp4", thumbnail: "../images/thumbnails/action/endgame.jfif" },
+        { title: "Rebel Ridge", src: "../clips/action/2.mp4", thumbnail: "../images/thumbnails/action/rebelRidge.jpg" },
+        { title: "The Union", src: "../clips/action/2.mp4", thumbnail: "../images/thumbnails/action/theUnion.jfif" }
     ],
     adventure: [
         { title: "Indiana Jones", src: "../clips/adventure/indianajones.mp4", thumbnail: "../images/thumbnails/adventure/indianajones.jpg" },
