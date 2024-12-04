@@ -44,19 +44,7 @@ header {
     border-radius: 10% 10% 10% 10%/ 10% 10% 10% 10%;
 }
 
-.home-b {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    margin-left: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
-    cursor: pointer;
-    border-radius: 1.2rem;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 5px rgba(227, 228, 237, 0.37);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
-}
+
 
 .about-b {
     font-size: 1.5rem;
