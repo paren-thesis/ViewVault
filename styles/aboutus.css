@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sour Gummy', sans-serif;
+    background-color: #1f1b2e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 5px rgba(227, 228, 237, 0.37);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 10px;
+    background-color: #a278ff;
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10% 10% 10% 10%/ 10% 10% 10% 10%;
+  }
+
+.logo:hover {
+    box-shadow: 6px 6px 13px rgb(75, 34, 141);
+}
+
+.about-us {
+    padding: 40px 50px;
+    background-color: #2a2439;
+}
+
+.about-header h2 {
+    font-size: 2.5em;
+    color: #a278ff;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #d1cfd9;
+    margin-bottom: 20px;
+}
+
+.hero {
+    background-color: #b8a9ee;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.more-thumbnail {
+    height: 500px;
+    align-content: flex-end;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.topic {
+    font-size: 90px;
+    animation: fadeInRight 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.content {
+    font-size: 30px;
+    width: 500px;
+    animation: fadeInLeft 1s ease-in-out forwards;
+    opacity: 0;
+}

@@ -10,3 +10,11 @@ document.addEventListener('scroll', () => {
         content.style.opacity = '1';
     }
 });
+
+function goToAboutUs() {
+    window.location.href = 'aboutus.html';
+}
+
+function goToStart() {
+    window.location.href = 'selection.html';
+}
