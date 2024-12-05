@@ -79,7 +79,7 @@ nav li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 70px;
 }
 
 .player {
@@ -97,7 +97,7 @@ nav li:hover {
 .genre-btn {
   background-color: #ffffff00;
   color: rgba(255, 255, 255, 0.959);
-  border: 2px solid #a278ff;
+  border: 3px solid #7c51ff;
   padding: 10px 20px;
   margin: 5px;
   border-radius: 15px 2px;
