@@ -6,9 +6,10 @@
 
 body {
   font-family: "Sour Gummy", sans-serif;
-  background-color: #13111c;
+  background-color: #0f0f0f;
   color: #fff;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 /* General Styles */
@@ -20,133 +21,201 @@ body {
 }
 
 button{
-  font-family: 'Sour Gummy', sans-serif;
+  font-family: "Sour Gummy", sans-serif;
 }
 
 header {
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 5px rgba(227, 228, 237, 0.37);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem 2rem;
+    background: rgba(15, 15, 15, 0.95);
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffffff;
-  margin-left: 10px;
-  background-color: #a278ff;
-  padding-right: 15px;
-  padding-left: 15px;
-  transition: 0.3s;
-  cursor: pointer;
-  border-radius: 10% 10% 10% 10%/ 10% 10% 10% 10%;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #7c51ff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .logo:hover {
-  box-shadow: 6px 6px 13px rgb(75, 34, 141);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(124, 81, 255, 0.3);
 }
 
 .empty {
-  height: 100px;
+    height: 80px;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 nav li {
-  cursor: pointer;
-  padding: 5px 10px;
-  transition: background 0.3s;
-  font-weight: 800;
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    border-radius: 6px;
 }
 
 nav li:hover {
-  background-color: #3e3561;
-  border-radius: 25px;
+    background-color: rgba(124, 81, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Video Player Section */
 .video-player {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+    background: linear-gradient(to bottom, #0f0f0f, #1a1423);
 }
 
 .player {
-  width: 80%;
-  background-color: #1a1423;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 1200px;
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.player iframe {
+    aspect-ratio: 16/9;
+    border-radius: 12px;
 }
 
 .genres {
-  margin-top: 15px;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
 }
 
 .genre-btn {
-  background-color: #ffffff00;
-  color: rgba(255, 255, 255, 0.959);
-  border: 3px solid #7c51ff;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 15px 2px;
-  cursor: pointer;
-  transition: background 0.3s;
-  font-weight: 800;
+    background-color: rgba(124, 81, 255, 0.1);
+    color: #fff;
+    border: 2px solid #7c51ff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .genre-btn:hover {
-  background-color: #7c51ff;
-  margin-bottom: 5px;
+    background-color: #7c51ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(124, 81, 255, 0.3);
 }
 
 /* Movie Thumbnails */
 .movie-thumbnails {
-  margin: 20px;
-  padding: 20px;
+    padding: 2rem 4rem;
+}
+
+.movie-thumbnails h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-weight: 600;
 }
 
 .thumbnail-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 1rem 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .thumbnail {
-  position: relative;
-  cursor: pointer;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+    animation-fill-mode: both;
 }
+
+/* Add staggered animation delay for each thumbnail */
+.thumbnail:nth-child(1) { animation-delay: 0.1s; }
+.thumbnail:nth-child(2) { animation-delay: 0.15s; }
+.thumbnail:nth-child(3) { animation-delay: 0.2s; }
+.thumbnail:nth-child(4) { animation-delay: 0.25s; }
+.thumbnail:nth-child(5) { animation-delay: 0.3s; }
+.thumbnail:nth-child(6) { animation-delay: 0.35s; }
 
 .thumbnail img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s;
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-.thumbnail img:hover {
-  transform: scale(1.1);
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(124, 81, 255, 0.2);
+}
+
+.thumbnail:hover img {
+    filter: brightness(1.2);
+}
+
+.thumbnail::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail:hover::after {
+    opacity: 1;
 }
 
 footer {
-  background-color: #1a1423;
-  padding: 20px;
-  text-align: center;
-  color: #a278ff;
-  font-size: 0.9em;
-  margin-top: 20px;
+    background-color: #0a0a0a;
+    padding: 1.5rem;
+    text-align: center;
+    color: #7c51ff;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
